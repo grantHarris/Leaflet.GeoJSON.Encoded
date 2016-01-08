@@ -93,6 +93,9 @@ L.GeoJSON.Encoded = L.GeoJSON.extend({
 				feature = this._decodeFeature(features[i]);
 
 				if (feature.geometries || feature.geometry || feature.features || feature.coordinates) {
+					if(features[i].properties){
+						feature.properties = features[i].properties;
+					}
 					this.addData(feature);
 				}
 			}

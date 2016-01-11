@@ -18,7 +18,7 @@
       "geojson",
       "leaflet"
    ],
-   "main": "dist/leaflet.geojson.encoded.min.js",
+   "main": "src/leaflet.geojson.encoded.js",
    "dependencies": {
       "leaflet": "*"
    },
